@@ -11,5 +11,5 @@ java -jar ./target/jar.simple-0.0.1-SNAPSHOT-jar-with-dependencies.jar // to mak
 
 docker build -t scheduler .
 
-docker run schedule
+docker run scheduler
 
