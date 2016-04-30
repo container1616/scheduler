@@ -15,7 +15,7 @@ public class DemoService {
 	private static final Logger log = LoggerFactory
 			.getLogger(DemoService.class);
 
-	@Scheduled(fixedDelay = 1000)
+	@Scheduled(fixedDelay = 9000)
 	// @Scheduled(fixedRate = 5000)
 	public void demoServiceMethod() {
 		RestTemplate restTemplate = new RestTemplate();
@@ -30,7 +30,9 @@ public class DemoService {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		log.info("++++++++++++++++++++++++++++++");
 		log.info("Method executed at every 5 seconds. Current time is :: " + new Date());
 		log.info(quote.getValue().getId() + " ::: " + quote.getValue().getQuote());
+		log.info("++++++++++++++++++++++++++++++");
 	}
 }
