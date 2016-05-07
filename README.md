@@ -26,6 +26,7 @@ Instruction to push to container1616-docker-local.jfrog.io registry (private). I
 
 docker login container1616-docker-local.jfrog.io
 
+
 docker tag [image name] container1616-docker-local.jfrog.io/scheduler
 
 docker push container1616-docker-local.jfrog.io/scheduler
